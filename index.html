@@ -3,30 +3,70 @@
     <head>
         <meta charset="UTF-8">
         <title>Portfólio Web - Fillipe</title>
+        
+        <!--Fonte que será usada-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        
+        <!--Estilização do portfólio-->
+        <style>
+            body{
+                background-color: #cad2c5;
+            }
+
+            .perfil{
+                color: #212529;
+                text-align: center;
+                text-decoration: underline;
+                border-radius: 50%;
+            }
+
+            .descricao{
+                
+                text-align: center;
+                font-family: 'Indie Flower', cursive;
+                font-size: 24px;
+                color: #31572c;
+                font-weight: 600px;
+            }
+
+            .habilidades {
+                text-align: center;
+                font-family: 'Indie Flower', cursive;
+                font-size: 24px;
+                list-style-position: inside;
+                color: #31572c;
+                font-weight: 600px;
+            }
+
+            .sub-titulos{
+                text-align: center;
+            }
+        </style>
     </head>
     
     <body>
-        <a href="#Habilidades">Habilidades</a> 
-        <a href="#Descricao">Descrição</a>
+        <a href="#habilidades" class="links">Habilidades</a> 
+        <a href="#descricao" class="links">Descrição</a>
+        <a href="https://github.com/rakr-18" target="_blank" class="links">GitHub</a>
         <hr>
 
-        <img src="imagens/foto-fillipe.jpeg" alt="Foto de perfil do Fillipe Oliveira de Andrade" width="300px">
-        <h2>Fillipe Oliveira de Andrade</h2>
+        <center> <img src="imagens/foto-2-fillipe.jpeg" alt="Foto de perfil do Fillipe Oliveira de Andrade" width="300px" class="perfil"> </center>
+        <h1 class="perfil">Fillipe Oliveira de Andrade</h2>
         <hr>
 
-        <h2 id="Descricao">Descrição</h2>
-        <p>Me chamo Fillipe Oliveira e tenho 18 anos, acabei de formar no ensino médio e estou estudando Desenvolvimento Web na Trybe.</p>
-        <p>Moro em Nova Iguaçu, Rio de Janeiro.</p>
-        <p>Simplesmente apaixonado por programação e computadores.</p>
+        <h2 class="sub-titulos">Descrição</h2>
+        <p class="descricao">Me chamo Fillipe Oliveira e tenho 18 anos, acabei de formar no ensino médio e estou estudando Desenvolvimento Web na Trybe.</p>
+        <p class="descricao">Moro em Nova Iguaçu, Rio de Janeiro.</p>
+        <p class="descricao">Simplesmente apaixonado por programação e computadores.</p>
         <hr>
 
-        <h2 id="Habilidades">Habilidades</h2>
-        <ul>
+        <h2 class="sub-titulos">Habilidades</h2>
+        <ul class="habilidades">
             <li>Lógica de Programação - Udemy</li>
             <li>Linguagem de programação C (50%) - Udemy</li>
+            <li>Git e GitHub - Trybe</li>
         </ul>
-        <hr>
-
-        <a href="https://github.com/rakr-18" target="_blank">GitHub</a>
     </body>
 </html>
